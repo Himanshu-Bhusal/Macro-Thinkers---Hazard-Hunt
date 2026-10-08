@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Hazard Hunt — Warehouse Hazard Perception Training | Macro Thinker
+    </title>
+    <meta
+      name="description"
+      content="Hazard Hunt is a browser-based 360° hazard perception trainer for warehouse safety. No headsets, no installs — just a scored, auditable compliance record."
+    />
+    <link rel="icon" href="logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a href="index.html" class="logo">
+          <img src="logo.svg" alt="" />
+          <span>Macro Thinker</span>
+        </a>
+        <nav class="main-nav" id="main-nav">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="demo.html">Demo</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <a href="contact.html" class="btn btn-primary nav-cta"
+            >Request a Demo</a
+          >
+        </nav>
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero hero--home">
+        <div class="wrap">
+          <div class="hero__copy">
+            <span class="eyebrow">Warehouse Safety Training</span>
+            <h1>Built for the floor, not the boardroom.</h1>
+            <p>
+              Hazard Hunt is a browser-based 360&deg; hazard perception trainer.
+              Trainees spot real hazards on a real floor plan &mdash; and every
+              attempt becomes a compliance record your safety team can hand an
+              auditor.
+            </p>
+            <div class="btn-group">
+              <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+              <a href="demo.html" class="btn btn-outline">See How It Works</a>
+            </div>
+          </div>
+          <div class="hero__visual">
+            <div class="scan-device">
+              <div class="scan-device__screen">
+                <span class="scan-device__label"
+                  >360&deg; Scan &middot; Loading Bay</span
+                >
+                <span class="hazard-dot" style="top: 62px; left: 90px"></span>
+                <span class="hazard-dot" style="top: 118px; left: 205px"></span>
+                <span class="hazard-dot" style="top: 150px; left: 130px"></span>
+              </div>
+              <p class="scan-device__caption">
+                Tap a hazard to flag it &mdash; scored on submit
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="eyebrow">The Problem</span>
+            <h2>Why Signing a Sheet Isn't Enough</h2>
+          </div>
+          <div class="card-grid">
+            <div class="card">
+              <div class="card__icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <rect
+                    x="6"
+                    y="4"
+                    width="12"
+                    height="17"
+                    rx="1.5"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <rect
+                    x="9"
+                    y="2.5"
+                    width="6"
+                    height="3"
+                    rx="1"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <line
+                    x1="8.5"
+                    y1="11"
+                    x2="15.5"
+                    y2="11"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                  <line
+                    x1="8.5"
+                    y1="14.5"
+                    x2="15.5"
+                    y2="14.5"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                  />
+                </svg>
+              </div>
+              <h3>Posters, PDFs, toolbox talks</h3>
+              <p>
+                The current routine is a handout, a poster on the wall, a
+                five-minute talk before a shift starts.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card__icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M4 19c4-1 5-6 8-6s2 4 5 4 4-3 4-3"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <line
+                    x1="4"
+                    y1="21"
+                    x2="20"
+                    y2="21"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
+              <h3>Attendance isn't understanding</h3>
+              <p>
+                Workers sign the sheet. That tells you who showed up, not who
+                can actually spot a hazard on the floor.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card__icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                >
+                  <path
+                    d="M12 3 L22 20 H2 Z"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linejoin="round"
+                  />
+                  <line
+                    x1="12"
+                    y1="10"
+                    x2="12"
+                    y2="14.5"
+                    stroke="currentColor"
+                    stroke-width="1.6"
+                    stroke-linecap="round"
+                  />
+                  <circle cx="12" cy="17.2" r="0.9" fill="currentColor" />
+                </svg>
+              </div>
+              <h3>Risk stays invisible until it isn't</h3>
+              <p>
+                A blocked aisle or a damaged pallet nobody flags in training
+                gets found the hard way, during a shift or an inspection.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--paper">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="eyebrow">How It Works</span>
+            <h2>One Loop, Every Role Sits Around It</h2>
+          </div>
+          <div class="steps-row">
+            <div class="step">
+              <div class="step__num">1</div>
+              <h3>Open the scan</h3>
+              <p>On the tablet, no install needed.</p>
+            </div>
+            <div class="step">
+              <div class="step__num">2</div>
+              <h3>Spot hazards</h3>
+              <p>Pan the 360&deg; view, tap what looks wrong.</p>
+            </div>
+            <div class="step">
+              <div class="step__num">3</div>
+              <h3>Get scored</h3>
+              <p>See what was caught and what was missed.</p>
+            </div>
+            <div class="step">
+              <div class="step__num">4</div>
+              <h3>Logged automatically</h3>
+              <p>Result saved to the compliance record.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="wrap">
+          <div class="section-heading">
+            <span class="eyebrow">The Practical Case</span>
+            <h2>Why a Browser, Not a Headset</h2>
+          </div>
+          <div class="compare">
+            <div class="compare__col compare__col--light">
+              <h3>VR Headset Training</h3>
+              <div class="compare__row">
+                <span class="compare__label">Hardware</span>
+                <span class="compare__value"
+                  >$300&ndash;$1,000+ per headset</span
+                >
+              </div>
+              <div class="compare__row">
+                <span class="compare__label">Rollout</span>
+                <span class="compare__value"
+                  >A headset per trainee, per branch</span
+                >
+              </div>
+              <div class="compare__row">
+                <span class="compare__label">Onboarding</span>
+                <span class="compare__value"
+                  >Headset fit, motion-sickness checks</span
+                >
+              </div>
+              <div class="compare__row">
+                <span class="compare__label">Maintenance</span>
+                <span class="compare__value"
+                  >Firmware updates, hardware repairs</span
+                >
+              </div>
+            </div>
+            <div class="compare__col compare__col--dark">
+              <h3>Hazard Hunt</h3>
+              <div class="compare__row">
+                <span class="compare__label">Hardware</span>
+                <span class="compare__value"
+                  >Runs on tablets and laptops you own</span
+                >
+              </div>
+              <div class="compare__row">
+                <span class="compare__label">Rollout</span>
+                <span class="compare__value"
+                  >One link, shared across existing devices</span
+                >
+              </div>
+              <div class="compare__row">
+                <span class="compare__label">Onboarding</span>
+                <span class="compare__value">Open a browser tab</span>
+              </div>
+              <div class="compare__row">
+                <span class="compare__label">Maintenance</span>
+                <span class="compare__value">Standard web hosting</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--teal">
+        <div class="wrap cta-band">
+          <h2>See It On Your Own Floor</h2>
+          <p>
+            We'll build the first scenario from your own warehouse photos. No
+            cost to look.
+          </p>
+          <a href="contact.html" class="btn btn-primary">Request a Demo</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="index.html" class="logo">
+              <img src="logo.svg" alt="" />
+            </a>
+            <p>Built for the floor, not the boardroom.</p>
+          </div>
+          <div class="footer-col">
+            <h4>Site</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="demo.html">Demo</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <p>
+              <a href="mailto:himanshubhusal62@gmail.com"
+                >himanshubhusal62@gmail.com</a
+              >
+            </p>
+            <p>Butwal, Nepal</p>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li>
+                <a href="terms-and-conditions.html">Terms and Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="wrap">
+          &copy; 2026 Macro Thinker. Student enterprise project, CET257.
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
