@@ -31,44 +31,6 @@ Shared files:
 └── README.md
 ```
 
-## Run locally
-
-No install needed. Either:
-
-- open `index.html` directly in a browser, or
-- serve the folder with any static server, for example:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit <http://localhost:8000>.
-
-## Contact form setup (Formspree)
-
-The form on `contact.html` posts to Formspree so it works without a backend.
-
-1. Create a free form at [formspree.io](https://formspree.io).
-2. Copy your form ID.
-3. In `contact.html`, replace `YOUR_FORM_ID` in the form action:
-
-```html
-<form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
-```
-
-Until you do this, submissions will fail. The form validates required fields and email format in the browser before it submits.
-
-## Deploy to Vercel
-
-The site needs no configuration.
-
-1. Push this folder to a GitHub repository.
-2. In [Vercel](https://vercel.com), choose **Add New → Project** and import the repository.
-3. Leave the framework preset as **Other**, with no build command and no output directory.
-4. Click **Deploy**.
-
-It also works on GitHub Pages, Netlify, or any other static host.
-
 ## Design reference
 
 | Token | Value | Use |
